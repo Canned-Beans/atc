@@ -15,14 +15,17 @@
 <button onclick="openCart()">Display Cart</button>
 
 <div id="cart" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">X</a>
-  <button onclick="clearCart()">Clear All</button>
-
+  <div class="cart-header">
+    <h2>Shopping Cart</h2>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">X</a>
+  </div>
   <div id="cartContents"></div>
+  <div class="cart-footer">
+    <button onclick="clearCart()">Clear All</button>
+  </div>
 </div>
 
 <script src="script1.js"></script>
-
 
 </body>
 </html>
