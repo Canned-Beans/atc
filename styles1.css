@@ -12,7 +12,6 @@
   transition: 0.5s;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .sidebar .cart-header,
@@ -25,6 +24,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#cartContents {
+  overflow: auto;
 }
 
 .sidebar a {
@@ -41,9 +44,6 @@
 }
 
 .sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
   font-size: 36px;
   margin-left: 50px;
 }
