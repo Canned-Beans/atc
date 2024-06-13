@@ -13,6 +13,24 @@
   padding-top: 60px;
 }
 
+.sidebar .cart-header,
+.sidebar .cart-footer {
+  padding: 20px;
+  color: #f1f1f1;
+}
+
+.sidebar .cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar .cart-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
