@@ -1,55 +1,28 @@
-<html lang="en" class=" js"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="style.css">
-
-<title>Add to Cart Interaction </title>
-</head>
+<!DOCTYPE html>
+<html>
 <body>
-<main class="cd-main container margin-top-xxl">
-<div class="text-component text-center">
-<h1>Add to Cart Interaction</h1>
-<p class="flex flex-wrap flex-center flex-gap-xxs">
+<link rel="stylesheet" type="text/css" href="styles1.css">
+<h2>Add to Cart Form</h2>
+<a href="page1.html">Ben</a>
+<form id="addToCartForm">
+  <label for="productName">Product Name:</label><br>
+  <label for="productid">Cake</label><br>
+  <label for="productPrice">Product Price:</label><br>
+  <label for="productprice">Cake</label><br>
+  <input type="button" value="Add to Cart" onclick="addToCart()">
+</form>
 
-<a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="25.99">Add To Cart</a>
-</p>
+<button onclick="openCart()">Display Cart</button>
+
+<div id="cart" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">X</a>
+  <button onclick="clearCart()">Clear All</button>
+
+  <div id="cartContents"></div>
 </div>
-</main>
-<div class="cd-cart cd-cart--empty js-cd-cart">
-<a href="#0" class="cd-cart__trigger text-replace">
-Cart
-<ul class="cd-cart__count"> 
-<li>0</li>
-<li>0</li>
-</ul> 
-</a>
-<div class="cd-cart__content">
-<div class="cd-cart__layout">
-<header class="cd-cart__header">
-<h2>Cart</h2>
-<span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
-</header>
-<div class="cd-cart__body">
-<ul>
 
-</ul>
-</div>
-<footer class="cd-cart__footer">
-<a href="#0" class="cd-cart__checkout">
-<em>Checkout - $<span>0</span>
-<svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"></line><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "></polyline></g>
-</svg>
-</em>
-</a>
-</footer>
-</div>
-</div> 
-</div> 
+<script src="script1.js"></script>
 
 
-
-<script src="main.js"></script>
-
-
-</body></html>
+</body>
+</html>
