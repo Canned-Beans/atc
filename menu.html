@@ -37,7 +37,7 @@
 						<a class="icon solid fa-address-card scrolly" href="about.html">About</a>
 					</li>
 					<li>
-						<a class="icon solid fa-envelope" href="contact.html">Contact</a>
+						<a onclick="openCart()">cart</a>
 					</li>
 				</ul>
 			</nav>
@@ -85,15 +85,8 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <form name="contact" action="https://formspree.io/f/mleqvqjn" method="POST">
-                                <div class="col-6 col-12">
-                                    <input type="text" name="name" id="name" value="" placeholder="Name" required>
-                                </div>
-                                <br>
-                                <div class="col-6 col-12-large">
-                                    <input type="email" name="email" id="email" value="" placeholder="Email or Phone" required>
-                                </div>
-                                <br>
+                            <form id="addToCartForm">
+                                
                                 <div class="col-6">
                                     <select name="category" id="category" required>
                                         <option value="">- Choose Amount -</option>
@@ -101,19 +94,13 @@
                                         <option value="1 Dozen Refresshing Rolls">1 Dozen</option>
                                         <option value="2 Dozen Dinner Rolls">2 Dozen</option>
                                         <option value="Custom Order Refresshing Rolls">Different Amount (Type Below)</option>
+					<label for="productName">Product Name:</label><br>
+  					<input type="text" id="productName" name="productName" value="Product 1" readonly><br>
+  					<label for="productPrice">Product Price:</label><br>
+  					<input type="text" id="productPrice" name="productPrice" value="$10" readonly><br><br>
+  					<input type="button" value="Add to Cart" onclick="addToCart()">
                                     </select>
-                                </div>
-                                <br>
-                                <div class="col-12">
-                                    <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
-                                </div>
-                                <br>
-                                <ul class="actions">
-                                    <li>
-                                        <input type="submit" value="Submit Order">
-                                        <input type="button" value="More Info" onclick="window.location.href='RR.html';">
-                                    </li>
-                                </ul>
+                                
                             </form>
                             
                         </article>
