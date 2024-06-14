@@ -53,17 +53,20 @@ function openCart() {
 }
 
 // Define the closeCartOnClickOutside function
+// Define the closeCartOnClickOutside function
 function closeCartOnClickOutside(event) {
   var cart = document.getElementById("cart");
+  var openCartButton = document.getElementById("openCartButton"); // Replace with your actual open cart button id
 
-  // If the click event target is not inside the cart, close the cart
-  if (!cart.contains(event.target)) {
+  // If the click event target is not inside the cart and not the open cart button, close the cart
+  if (!cart.contains(event.target) && event.target !== openCartButton) {
     closeCart();
 
     // Remove the event listener from the document
     document.removeEventListener('click', closeCartOnClickOutside);
   }
 }
+
 
 
 function closeCart() {
