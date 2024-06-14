@@ -47,7 +47,7 @@ function openCart() {
   document.getElementById("cart").style.width = "25%";
   displayCart();
 
-  // Add an event listener to the document that closes the cart
+  sleep(100);
   document.addEventListener('click', closeCartOnClickOutside);
 }
 
