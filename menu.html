@@ -50,8 +50,9 @@
 			</nav>
 		</header>
 		<div id="cart" class="sidebar">
-			<h2 class="cart-header">Cart</h2> 
-			<i class="fa-light fa-x" style="color: #ff0000;"></i>
+			<div class="cart-header">
+			<h2>Cart</h2> 
+			<i class="closebtn" onclick="closeCart()" class="fa-light fa-x" style="color: #ff0000;"></i>
 			<div id="cartContents"></div>
 			<div class="cart-footer">
 				<button onclick="clearCart()">Clear All</button>
