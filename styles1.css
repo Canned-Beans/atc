@@ -1,6 +1,6 @@
 .sidebar {
   height: 100%;
-  width: 0;
+  width: 25%;
   position: fixed;
   z-index: 9999; /* Increase this value to ensure the sidebar appears above all other content */
   top: 0;
