@@ -47,7 +47,7 @@ function openCart() {
   document.getElementById("cart").style.width = "25%";
   displayCart();
 
-  sleep(100);
+  sleep(1000);
   document.addEventListener('click', closeCartOnClickOutside);
 }
 
