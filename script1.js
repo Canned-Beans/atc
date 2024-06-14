@@ -24,13 +24,11 @@ function addToCart() {
 
   // Save the updated cart back to localStorage
   localStorage.setItem('cart', JSON.stringify(cart));
-  var cartContentsDiv = document.getElementById("cartContents");
-  cartContentsDiv.innerHTML = ""; // Clear the cart contents div
-  
-  // Get the cart from localStorage
-  var cart = JSON.parse(localStorage.getItem('cart')) || [];
- 
+
+  // Update the cart display without opening the cart
+  displayCart();
 }
+
 
 function displayCart() {
   var cartContentsDiv = document.getElementById("cartContents");
