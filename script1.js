@@ -24,7 +24,11 @@ function addToCart() {
 
   // Save the updated cart back to localStorage
   localStorage.setItem('cart', JSON.stringify(cart));
-  openCart()
+  var cartContentsDiv = document.getElementById("cartContents");
+  cartContentsDiv.innerHTML = ""; // Clear the cart contents div
+  
+  // Get the cart from localStorage
+  var cart = JSON.parse(localStorage.getItem('cart')) || [];
  
 }
 
