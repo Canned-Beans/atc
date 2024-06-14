@@ -48,6 +48,6 @@
 
 .sidebar .closebtn {
   font-size: 25px;
-  margin-top: 0; /* Adjust this value as needed */
+  margin-top: -10; /* Adjust this value as needed */
 }
 
