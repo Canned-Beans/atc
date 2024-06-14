@@ -44,15 +44,18 @@ function displayCart() {
 }
 
 function openCart() {
-  document.getElementById("cart").style.width = "25%";
+  var cart = document.getElementById("cart");
+  cart.style.width = "25%";
   displayCart();
 
-  sleep(1000);
-  document.addEventListener('click', closeCartOnClickOutside);
+  cart.addEventListener('transitionend', function() {
+    document.addEventListener('click', closeCartOnClickOutside);
+  }, { once: true });
 }
 
 function closeCart() {
-  document.getElementById("cart").style.width = "0";
+  var cart = document.getElementById("cart");
+  cart.style.width = "0";
 
   // Remove the event listener from the document when the cart is closed
   document.removeEventListener('click', closeCartOnClickOutside);
@@ -67,6 +70,7 @@ function closeCartOnClickOutside(event) {
     closeCart();
   }
 }
+
 
 
 function clearCart() {
