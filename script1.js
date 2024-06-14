@@ -46,10 +46,25 @@ function displayCart() {
 function openCart() {
   document.getElementById("cart").style.width = "25%";
   displayCart();
+
+  // Add an event listener to the document that closes the cart
+  document.addEventListener('click', closeCartOnClickOutside);
 }
 
 function closeCart() {
   document.getElementById("cart").style.width = "0";
+
+  // Remove the event listener from the document when the cart is closed
+  document.removeEventListener('click', closeCartOnClickOutside);
+}
+
+function closeCartOnClickOutside(event) {
+  var cart = document.getElementById("cart");
+
+  // Check if the click was outside the cart
+  if (!cart.contains(event.target)) {
+    closeCart();
+  }
 }
 
 function clearCart() {
