@@ -43,31 +43,10 @@ function displayCart() {
   }
 }
 
-// Add this code inside your openCart function
 function openCart() {
   document.getElementById("cart").style.width = "25%";
   displayCart();
-
-  // Add an event listener to the document
-  document.addEventListener('click', closeCartOnClickOutside);
 }
-
-// Define the closeCartOnClickOutside function
-// Define the closeCartOnClickOutside function
-function closeCartOnClickOutside(event) {
-  var cart = document.getElementById("cart");
-  var openCartButton = document.getElementById("openCartButton"); // Replace with your actual open cart button id
-
-  // If the click event target is not inside the cart and not the open cart button, close the cart
-  if (!cart.contains(event.target) && event.target !== openCartButton) {
-    closeCart();
-
-    // Remove the event listener from the document
-    document.removeEventListener('click', closeCartOnClickOutside);
-  }
-}
-
-
 
 function closeCart() {
   document.getElementById("cart").style.width = "0";
