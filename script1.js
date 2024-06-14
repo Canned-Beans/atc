@@ -1,7 +1,7 @@
 function addToCart() {
   var productName = document.getElementById("productName").value;
   var productPrice = document.getElementById("productPrice").value;
-  var cartContentsDiv = document.getElementById("cartContents");
+  
   var product = {
     name: productName,
     price: productPrice,
@@ -24,7 +24,7 @@ function addToCart() {
 
   // Save the updated cart back to localStorage
   localStorage.setItem('cart', JSON.stringify(cart));
-
+  openCart()
  
 }
 
