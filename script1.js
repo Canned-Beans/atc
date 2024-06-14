@@ -54,7 +54,7 @@ function openCart() {
 function closeCart() {
   document.getElementById("cart").style.width = "0";
 
-  sleep(1500);
+  sleep(1000);
   document.removeEventListener('click', closeCartOnClickOutside);
 }
 
