@@ -46,7 +46,7 @@ function displayCart() {
 }
 
 function openCart() {
-  document.getElementById("cart").style.width = "250px";
+  document.getElementById("cart").style.width = "25%";
   displayCart();
 }
 
