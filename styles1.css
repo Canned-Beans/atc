@@ -1,8 +1,8 @@
 .sidebar {
   height: 100%;
-  width: 0;
+  width: 25%; /* Adjust this value to set the width of the sidebar */
   position: fixed;
-  z-index: 9999; /* Increase this value to ensure the sidebar appears above all other content */
+  z-index: 9999;
   top: 0;
   right: 0;
   background-color: #111;
@@ -15,7 +15,7 @@
 
 .sidebar .cart-header,
 .sidebar .cart-footer {
-  padding: 50px;
+  padding: 20px;
   color: #f1f1f1;
 }
 
