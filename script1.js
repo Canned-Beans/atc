@@ -54,18 +54,21 @@ function openCart() {
 function closeCart() {
   document.getElementById("cart").style.width = "0";
 
-  sleep(1000);
+
   document.removeEventListener('click', closeCartOnClickOutside);
 }
 
 function closeCartOnClickOutside(event) {
   var cart = document.getElementById("cart");
+  var clickPosition = event.clientX;
+  var windowWidth = window.innerWidth;
 
-  // Check if the click was outside the cart
-  if (!cart.contains(event.target)) {
+  // Check if the click was on the left 75% of the screen
+  if (clickPosition < windowWidth * 0.75) {
     closeCart();
   }
 }
+
 
 function clearCart() {
   // Clear the cart in localStorage
