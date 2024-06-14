@@ -1,7 +1,7 @@
 function addToCart() {
   var productName = document.getElementById("productName").value;
   var productPrice = document.getElementById("productPrice").value;
-
+  var cartContentsDiv = document.getElementById("cartContents");
   var product = {
     name: productName,
     price: productPrice,
