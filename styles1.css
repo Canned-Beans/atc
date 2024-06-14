@@ -1,6 +1,6 @@
 .sidebar {
   height: 100%;
-  width: 25%;
+  width: 0;
   position: fixed;
   z-index: 9999; /* Increase this value to ensure the sidebar appears above all other content */
   top: 0;
@@ -15,7 +15,7 @@
 
 .sidebar .cart-header,
 .sidebar .cart-footer {
-  padding: 20px;
+  padding: 50px;
   color: #f1f1f1;
 }
 
@@ -35,7 +35,7 @@
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .sidebar a:hover {
