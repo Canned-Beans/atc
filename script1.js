@@ -47,19 +47,18 @@ function openCart() {
   document.getElementById("cart").style.width = "25%";
   displayCart();
 
-  sleep(1500);
+  // Add an event listener to the document that closes the cart
   document.addEventListener('click', closeCartOnClickOutside);
 }
 
 function closeCart() {
   document.getElementById("cart").style.width = "0";
 
-
+  // Remove the event listener from the document when the cart is closed
   document.removeEventListener('click', closeCartOnClickOutside);
 }
 
 function closeCartOnClickOutside(event) {
-  var cart = document.getElementById("cart");
   var clickPosition = event.clientX;
   var windowWidth = window.innerWidth;
 
