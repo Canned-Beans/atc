@@ -1,56 +1,65 @@
 <!DOCTYPE HTML>
 <html>
-
-<head>
-    <title>That One Baking Place</title>
-    <link rel="icon" type="images/x-icon" href="images/favicon.png">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="main.css">
-    <script src="https://kit.fontawesome.com/c7867bb742.js" crossorigin="anonymous"></script>
-</head>
-
-<body class="landing is-preload">
-    <header id="header">
-        <nav id="nav">
-            <ul>
-                <li>
-                    <a class="icon solid fa-home" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a class="icon solid fa-utensils scrolly" href="#menu">Menu</a>
-                    <ul>
-                        <li>
-                            <a href="menu.html#bread">Bread</a>
-                        </li>
-                        <li>
-                            <a href="menu.html#pie">Pies</a>
-                        </li>
-                        <li>
-                            <a href="menu.html#cookie">Cookies</a>
-                        </li>
-                        <li>
-                            <a href="menu.html#bar">Bars</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="icon solid fa-address-card scrolly" href="about.html">About</a>
-                </li>
-                <li>
-                    <a class="icon solid fa-envelope" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section id="menu" class="wrapper style1">
-        <div class="container">
-            <header class="major">
-                <h2>Our Menu</h2>
-                <section id="bread">
-                </section>
-            </header>
-
+	<head>
+		<title>That One Baking Place</title>
+		<link rel="icon" type="images/x-icon" href="images/favicon.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="main.css">
+		<script src="script1.js"></script>
+		<script src="https://kit.fontawesome.com/c7867bb742.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="landing is-preload">
+		<header id="header">
+			<nav id="nav">
+				<ul>
+					<li>
+						<a class="icon solid fa-home" href="index.html">Home</a>
+					</li>
+					<li>
+						<a class="icon solid fa-utensils scrolly" href="#menu">Menu</a>
+						<ul>
+							<li>
+								<a href="menu.html#bread">Bread</a>
+							</li>
+							<li>
+								<a href="menu.html#pie">Pies</a>
+							</li>
+							<li>
+								<a href="menu.html#cookie">Cookies</a>
+							</li>
+							<li>
+								<a onclick="openCart()">cart</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="icon solid fa-address-card scrolly" href="about.html">About</a>
+					</li>
+					<li>
+						<a class="icon solid fa-envelope" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div id="cart" class="sidebar">
+			<div class="cart-header">
+				<h2>Shopping Cart</h2>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeCart()">
+					<i class="fas fa-times" style="color:red;"></i>
+				</a>
+			</div>
+			<div id="cartContents"></div>
+			<div class="cart-footer">
+				<button onclick="clearCart()">Clear All</button>
+			</div>
+		</div>
+		<section id="menu" class="wrapper style1">
+			<div class="container">
+				<header class="major">
+					<h2>Our Menu</h2>
+					<section id="bread"></section>
+				</header>
             <header class="major">
 
                 <h2>Breads</h2>
