@@ -50,14 +50,13 @@
 			</nav>
 		</header>
 		<div id="cart" class="sidebar">
-			<div class="cart-header">
-				
-				<div class="closebtn">
-					
-					<a class="icon solid fa-x" onclick="closeCart()"><h2>Cart</h2> </a>
-
-				</div>
+			<div class="cart-header" style="display: flex; align-items: center; justify-content: space-between;">
+    				<h2>Cart</h2> 
+    				<div class="closebtn">
+        				<a class="icon solid fa-x" onclick="closeCart()"></a>
+    				</div>
 			</div>
+
 			<div id="cartContents"></div>
 			<div class="cart-footer">
 				<button onclick="clearCart()">Clear All</button>
