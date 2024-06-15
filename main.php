@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Set up email parameters
-    $to = 'c28038174@gmail.com'; // Replace with your email
+    $to = 'cbreast90@gmail.com'; // Replace with your email
     $subject = 'New Order Received';
     $headers = "From: $email" . "\r\n" .
                "Reply-To: $email" . "\r\n" .
